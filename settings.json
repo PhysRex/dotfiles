@@ -1,0 +1,238 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+
+    "workbench.colorCustomizations": {
+        // "terminal.foreground" : "#00FD61",
+        // "terminal.background" : "#383737",
+        "terminal.background" : "#575045",
+        // "terminal.integrated.cursorBlinking": true,
+        // "terminal.integrated.cursorStyle": "line",
+        "terminalCursor.foreground":"#e6e3e3",
+        "terminalCursor.background":"#A5A2A2",
+        // "editor.foldBackground": "#ddebeb",
+
+        
+        "[Solarized-light-functional]": {
+            // "foreground": "",
+            // "textCodeBlock.background": "#ff0000",
+            "editor.selectionHighlightBackground": "#ddd8cf",
+            "editor.lineHighlightBackground": "#e6dcca81",
+            "list.inactiveSelectionBackground": "#e6dcca",
+            "editorWidget.background": "#ddd6c1",
+            // "input.background": "#fdf6e3",
+            "input.background": "#fffbec"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Solarized-light-functional]": {
+            "keywords": "#2560ad",
+            // "keywords": "#5c1ea3",
+            // "keywords": "#ad562e",
+            // "functions": "#FF0000",
+            // "types": "#00fff2",
+            // "variables": "#FF0000",
+            // "comments" :"#000",
+            // "numbers" :"#000",
+            // "strings" :"#000",
+            "textMateRules": [
+                {
+                    "scope": "entity",
+                    "settings": {
+                        "foreground": "#ad562e",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    // "name": "Variable and parameter name",
+                    "scope": [
+                        "variable",
+                        "variable.other",
+                        "meta.definition.variable.name",
+                        "support.variable",
+                        "entity.name.variable",
+                    ],
+                    "settings": {
+                        "foreground": "#474646"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.object.js",
+                    ],
+                    "settings": {
+                        "foreground": "#a31e1e"
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.other.object.property.js",
+                    ],
+                    "settings": {
+                        "foreground": "#ac940d"
+                    }
+                },
+                {
+                    "scope": "variable.other.readwrite.js",
+                    "settings": {
+                        "foreground": "#a31e1e",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "foreground": "#1f71dd",
+                        "fontStyle": "italic underline"
+                    }
+                },
+                {
+                    "scope": "entity.name.function",
+                    "settings": {
+                        "foreground": "#851b1b"
+                        // "foreground": "#1f71dd"
+                    }
+                },
+                {
+                    "scope": "entity.other.attribute-name",
+                    "settings": {
+                        "foreground": "#c2a60a"
+                    }
+                },
+                {
+                    "scope": "entity.name.tag",
+                    "settings": {
+                        "foreground": "#af5105"
+                    }
+                },
+                {
+                    "scope": [
+                        "punctuation.definition.template-expression.begin.js",
+                        "punctuation.definition.template-expression.end.js"
+                    ],
+                    "settings": {
+                        "foreground": "#bb2f91",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "string.template.js",
+                    "settings": {
+                        // "foreground": "#2AA198",
+                        "fontStyle": "none"
+                    }
+                },
+                {
+                    "scope": [
+                        "entity.other.attribute-name.class.css",
+                        "meta.selector.css",
+                        "source.css",
+                        "source.css.scss",
+                    ],
+                    "settings": {
+                        "foreground": "#ad562e",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": [
+                        "support.type.property-name.css",
+                        "meta.property-name.css",
+                        "meta.property-list.css",
+                    ],
+                    "settings": {
+                        "foreground": "#38790e",
+                        // "fontStyle": "bold"
+                    }
+                },
+            ]
+        }
+    },
+    "bracket-pair-colorizer-2.colors": [
+        "DeepSkyBlue",
+        "Orchid",
+        "LimeGreen",
+        "LightSkyBlue",
+        "LightCoral",
+        "Red",
+        // "Gold",
+    ],
+    "window.title": "${rootName} ${separator} ${activeFolderMedium} ",
+    "editor.foldingStrategy": "indentation",
+    "files.associations": {
+        "*.vue": "vue"
+    },
+    "editor.tabSize": 2,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[python]":{
+        "editor.formatOnSave":true
+    },
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "python.linting.flake8Enabled": true,
+    "explorer.confirmDelete": false,
+    "search.exclude": {
+        "**/bundle": true,
+        "**/static": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Solarized-light-functional",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.cursorBlinking": "phase",
+
+
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue",
+        "html",
+    ],
+    "eslint.format.enable": true,
+    "eslint.workingDirectories": [
+      { "changeProcessCWD": true, "directory": "./vue/dist/vue.esm.js" },
+      { "changeProcessCWD": true, "directory": "./wisersaver/webpack_assets/vue" },
+      { "changeProcessCWD": true, "directory": "./wisersaver/webpack_assets/vue/widgets/base/components" },
+      { "changeProcessCWD": true, "directory": "./wisersaver/webpack_assets/vue/widgets/base/utils" },
+      { "changeProcessCWD": true, "directory": "./wisersaver/webpack_assets/vue/widgets/base/constants" },
+      { "changeProcessCWD": true, "directory": "./wisersaver/webpack_assets/vue/widgets/savings/components" },
+      { "changeProcessCWD": true, "directory": "./wisersaver/webpack_assets/embed/utilities" },
+      { "changeProcessCWD": true, "directory": "./wisersaver/webpack_assets/embed/constants" },
+      { "changeProcessCWD": true, "directory": "./wisersaver/webpack_assets/embed/modules" }
+    ],
+    "editor.parameterHints.enabled": false,
+    "editor.suggest.showTypeParameters": false,
+    "editor.quickSuggestionsDelay": 1000,
+    "timeline.excludeSources": [],
+    "editor.foldingHighlight": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "zenMode.hideTabs": false,
+    "python.showStartPage": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderWhitespace": "none",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "yaml.schemas": {
+        "file:///Users/mcampuzano/.vscode/extensions/atlassian.atlascode-2.8.4/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.bitbucket.enabled": false,
+    "atlascode.jira.jqlList": [
+        {
+            "id": "b3b50742-b800-46a3-9df3-a8b097cab401",
+            "enabled": true,
+            "name": "My redventures Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "ec71a93e-8281-4457-8a67-0fdeefcafcca",
+            "monitor": true
+        }
+    ]
+}
