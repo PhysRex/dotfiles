@@ -1,8 +1,8 @@
-echo "loading.bashrc"
+# echo "loading .bashrc"
 
 # Load .bash_profile if NOT in a TMUX multiplexer
 if [[ -z "$TMUX" ]]; then
-echo "   > -- :: try loading .bash_profile"
+# echo "   > -- :: try loading .bash_profile"
     if [ -f "$HOME/.bash_profile" ]; then
     . "$HOME/.bash_profile"
     fi
@@ -88,7 +88,7 @@ esac
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 if [ -f ~/.bash_aliases ]; then
-echo "   > -- :: try loading .bash_aliases"
+# echo "   > -- :: loading .bash_aliases"
     . ~/.bash_aliases
 fi
 
@@ -106,7 +106,7 @@ fi
 
 
 #####################################################################
-# RV MacOS .profile [now modified]
+# RV MacOS .profile
 #source /usr/share/www/intranet.directstartv.com/scripts/srcsync-dir/helper.sh
 export CLICOLOR=1  # same as 'alias ls=ls -G' which I also have set
 #export LSCOLORS=exfxcxdxbxegedabagacad

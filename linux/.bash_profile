@@ -1,10 +1,12 @@
+# echo "loading .bash_profile"
+
 # Load .bashrc if you ARE in a TMUX multiplexer
 if [[ -n $TMUX ]]; then
+# echo "   > TMUX :: try loading .bashrc ..."
     if [ -f "$HOME/.bashrc" ]; then
     . "$HOME/.bashrc"
     fi
 fi
-
 
 # set the location where the virtual environments should live (python)
 export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
